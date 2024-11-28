@@ -1,0 +1,19 @@
+/* Overriding Metronic and PrimeReact styles */
+.p-calendar .p-inputtext {
+  border-radius: 0 !important;
+  border-top-left-radius: 7px !important;
+  border-bottom-left-radius: 7px !important;
+}
+
+.p-calendar .p-inputtext:focus {
+  border-radius: 0 !important;
+}
+
+.p-button {
+  border-radius: 0 !important;
+}
+
+.p-component {
+  border-top-right-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+}
