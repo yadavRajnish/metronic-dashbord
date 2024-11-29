@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { FloatLabel } from "primereact/floatlabel";
 import SubHeading from "../../heading/SubHeading";
+import { InputMask } from "primereact/inputmask";
 
-const FloatLableInputText = () => {
+const FloatLableInputNumber = () => {
   const [value, setValue] = useState("");
   const [value1, setValue2] = useState("");
 
@@ -23,30 +24,30 @@ const FloatLableInputText = () => {
       <div className="card-body p-12 max-w-[500px] bg-[#fff] m-auto rounded-lg border-[#f1f1f4] border">
         <div className="card flex justify-content-center">
           <FloatLabel>
-            <InputText
-              id="username"
+            <InputMask
+              id="ssn_input"
               value={value}
               onChange={e => setValue(e.target.value)}
+              mask="999-99-9999"
               className="!input"
             />
-
             <label
-              htmlFor="username"
+              htmlFor="ssn_input"
               className="!font-normal !text-[#99a1b9] text-[0.875rem]"
             >
-              Username
+              SSN
             </label>
           </FloatLabel>
         </div>
 
         <div className="relative mt-10">
-          <input
+          <InputMask
             id="floating_outlined"
-            type="text"
+            mask="999-99-9999"
             value={value1}
-            className="!input block px-2.5 pb-2.5 pt-4 w-full text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer !text-[0.875rem]"
             placeholder=" "
             onChange={handleChange2}
+            className="!input block px-2.5 pb-2.5 pt-4 w-full text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer !text-[0.875rem]"
           />
 
           <label
@@ -61,4 +62,4 @@ const FloatLableInputText = () => {
   );
 };
 
-export default FloatLableInputText;
+export default FloatLableInputNumber;

@@ -1,0 +1,47 @@
+.\!input-md {
+  font-weight: 500 !important;
+  font-size: 0.8rem /* 12px */ !important;
+  height: 2.5rem /* 32px */ !important;
+  /* padding-inline-start: 0.825rem  !important; */
+  /* padding-inline-end: 0.825rem  !important; */
+}
+.input:not(input).\!input-md i {
+  font-size: 1rem /* 14px */ !important;
+}
+
+.\!input-sm {
+  font-weight: 500 !important;
+  font-size: 0.75rem /* 12px */ !important;
+  height: 2rem /* 32px */ !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: 0 !important;
+}
+.input:not(input).\!input-sm i {
+  font-size: 0.875rem /* 14px */ !important;
+}
+
+.\!input {
+  background-color: #fff !important;
+}
+
+.p-inputtext:enabled:focus {
+  box-shadow: none !important;
+}
+
+.p-inputnumber-buttons-stacked {
+  position: relative !important;
+  overflow: hidden !important;
+}
+/* .p-inputnumber-button-group {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0px !important;
+  bottom: 0 !important;
+  height: 10px !important;
+  width: 46px !important;
+} */
+
+.p-component button {
+  border-top-right-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+}

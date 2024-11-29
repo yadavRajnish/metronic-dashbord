@@ -132,6 +132,16 @@ function Sidebar() {
               <div
                 className="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[8px]"
                 tabIndex={0}
+                onClick={() => navigate("/input-number")}
+              >
+                <span className="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]"></span>
+                <span className="menu-title text-sm font-semibold text-gray-700 menu-item-active:text-primary menu-link-hover:!text-primary">
+                  Input Number
+                </span>
+              </div>
+              <div
+                className="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[8px]"
+                tabIndex={0}
                 onClick={() => navigate("/dropdown")}
               >
                 <span className="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]"></span>
